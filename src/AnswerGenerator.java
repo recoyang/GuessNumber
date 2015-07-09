@@ -6,8 +6,10 @@ public class AnswerGenerator {
 		for (int i = 0; i < flag.length; i++) {
 			flag[i] = 0;
 		}
+		
 		for (int j = 0; j < randomNumber.length; j++) {
-			int singleNumber = (int)(Math.random()*10);
+			int singleNumber;
+		singleNumber = j>0?(int)(Math.random()*10):(int)((Math.random()*9)+1);
 			if (flag[singleNumber] == 0) {
 				randomNumber[j] = singleNumber;
 				flag[singleNumber] = 1;
