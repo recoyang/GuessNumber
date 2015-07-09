@@ -9,7 +9,7 @@ public class GuessNumber {
 		int gameTime = 6;
 	
 		Scanner scr = new Scanner(System.in);
-		
+		//用户输入；
 		System.out.println("Welcome!");
 		
 		String answerStatus = "Game Over";
