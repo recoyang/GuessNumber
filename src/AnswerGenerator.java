@@ -9,7 +9,7 @@ public class AnswerGenerator {
 		
 		for (int j = 0; j < randomNumber.length; j++) {
 			int singleNumber;
-		singleNumber = j>0?(int)(Math.random()*10):(int)((Math.random()*9)+1);
+			singleNumber = j>0?(int)(Math.random()*10):(int)((Math.random()*9)+1);
 			if (flag[singleNumber] == 0) {
 				randomNumber[j] = singleNumber;
 				flag[singleNumber] = 1;
