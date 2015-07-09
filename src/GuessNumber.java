@@ -16,14 +16,14 @@ public class GuessNumber {
 		
 		while(gameTime > 0){
 			System.out.println("Please enter your number("+gameTime+")");
-			int userInputNumbrt = scr.nextInt();
-			int[] userIuput = new int[4];
-			for (int i = 0; i < userIuput.length; i++) {
-				userIuput[i] = userInputNumbrt%10;
-				userInputNumbrt /= 10;
+			int userInputNum = scr.nextInt();
+			int[] userInput = new int[4];
+			for (int i = 0; i < userInput.length; i++) {
+				userInput[i] = userInputNum%10;
+				userInputNum /= 10;
 			}
 			
-			String result =	CompareNumber.compareNumbers(userIuput,a);
+			String result =	CompareNumber.compareNumbers(userInput,a);
 			
 			if (result.equals("4A0B")) {
 				answerStatus = "Congratulations";
